@@ -34,5 +34,14 @@ public class C01Type {
 
         System.out.println(v1 + 1);
 
+        // long (8byte)
+        // 4byte 이상의 수 작성 시 끝에 L 붙이기
+        long v2 = 214748364800000000L;
+        long v3 = 21_4748_3648_0000_0000L;
+        long v4 = 214_748_364_800_000_000L;
+
+
+
+
     }
 }
