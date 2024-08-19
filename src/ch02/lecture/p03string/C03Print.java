@@ -7,5 +7,19 @@ public class C03Print {
 
         System.out.printf("형식%10s%10s%n", "abc", "def");
         System.out.printf("형식%-10s%-10s%n", "abc", "def");
+
+        // %d : 정수(byte, short, int, long) 출력
+        System.out.printf("정수%d,%d%n", 345, 678);
+        System.out.printf("정수%10d,%10d%n", 345, 678);
+        System.out.printf("정수%-10d,%-10d%n", 345, 678);
+        System.out.printf("정수%010d,%010d%n", 345, 678);
+
+        // %f : 실수(float, double) 출력
+        System.out.printf("실수%f,%f%n", 3.14, 9.1234);
+        System.out.printf("실수%10f,%10f%n", 3.14, 9.1234);
+        System.out.printf("실수%-10f,%-10f%n", 3.14, 9.1234);
+        System.out.printf("실수%010f,%010f%n", 3.14, 9.1234);
+        System.out.printf("실수%010.1f,%010.3f%n", 3.14, 9.1234);
+
     }
 }
