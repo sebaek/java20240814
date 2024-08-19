@@ -5,7 +5,7 @@ public class C06TypeConversion {
         // byte, short, int 끼리의 연산의 결과는 int
         byte a = 3;
         byte b = 5;
-        byte c = (byte) (a + b);
+        (byte) (a + b)
 
         // 정수 끼리의 연산 결과는 정수
         int d = 5;
