@@ -37,5 +37,14 @@ public class C06Double {
         System.out.println(Double.isFinite(b)); // false
         System.out.println(Double.isFinite(3.0)); // true
 
+        // -0.0
+        double c = 0.0;
+        double d = -0.0;
+        System.out.println("c = " + c);
+        System.out.println("d = " + d);
+
+        System.out.println(3 / c); // Infinity
+        System.out.println(3 / d); // -Infinity
+
     }
 }
