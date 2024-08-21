@@ -9,7 +9,7 @@ public class C04Example {
 
         int age = scanner.nextInt();
 
-        if (age >= 20) {
+        if (20 <= age) {
             System.out.println("성인입니다.");
         } else if (13 <= age) {
             System.out.println("청소년입니다.");
