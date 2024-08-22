@@ -9,6 +9,11 @@ public class Solution63 {
         3
         4
          */
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
+
+        System.out.println("------------------");
 
         /*
         4
@@ -17,7 +22,11 @@ public class Solution63 {
         1
         0
          */
+        for (int i = 4; i >= 0; i--) {
+            System.out.println(i);
+        }
 
+        System.out.println("----------------");
         /*
         1
         2
@@ -25,6 +34,12 @@ public class Solution63 {
         4
         5
          */
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+
+        System.out.println("--------------");
+
 
         /*
         5
@@ -33,6 +48,9 @@ public class Solution63 {
         2
         1
          */
+        for (int i = 5; i >= 1; i--) {
+            System.out.println(i);
+        }
 
         /*
         0
@@ -41,6 +59,13 @@ public class Solution63 {
         0123
         01234
          */
+        System.out.println("--------------");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < (i + 1); j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
 
         /*
         1
@@ -49,6 +74,13 @@ public class Solution63 {
         1234
         12345
          */
+        System.out.println("----------------");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 1; j <= (i + 1); j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
 
         /*
 
@@ -59,6 +91,13 @@ public class Solution63 {
          *
 
          */
+        System.out.println("-----------");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < (5 - i); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
 
         /*
 
@@ -69,5 +108,17 @@ public class Solution63 {
         01234
 
          */
+        System.out.println("--------------");
+        int i = 0;
+
+        for (int j = 0; j < 5; j++) {
+            for (int k = 0; k <= j; k++) {
+                System.out.print(i % 10);
+                i++;
+            }
+            System.out.println();
+        }
+
+
     }
 }
