@@ -22,6 +22,10 @@ public class C03Matrix {
         m1[2][0] = 99;
         m1[2][1] = 1010;
 
+        System.out.println("m1.length = " + m1.length);
+        System.out.println("m1[0].length = " + m1[0].length);
+        System.out.println("m1[1].length = " + m1[1].length);
+        System.out.println("m1[2].length = " + m1[2].length);
 
         System.out.println(Arrays.toString(m1[0]));
         System.out.println(Arrays.toString(m1[1]));
