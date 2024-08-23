@@ -14,9 +14,9 @@ public class C02Reference {
         brr[0] = 72;
         crr[0] = 73;
 
-        System.out.println("arr[0] = " + arr[0]); // 7
-        System.out.println("brr[0] = " + brr[0]); // 7
-        System.out.println("crr[0] = " + crr[0]); // 7
+        System.out.println("arr[0] = " + arr[0]); // 73
+        System.out.println("brr[0] = " + brr[0]); // 72
+        System.out.println("crr[0] = " + crr[0]); // 73
 
     }
 }
