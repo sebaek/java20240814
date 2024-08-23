@@ -33,5 +33,28 @@ public class C01Arrays {
         System.out.println(Arrays.deepToString(f));
         System.out.println(Arrays.deepToString(g));
 
+        // equals
+        int[] h = new int[]{3, 4, 5};
+        int[] i = new int[]{3, 4, 5};
+        System.out.println(h == i); // false
+        System.out.println(Arrays.equals(h, i)); // true
+
+        int[][] j = {{3, 4}, {5, 6, 7}};
+        int[][] k = {{3, 4}, {5, 6, 7}};
+        System.out.println(j == k); //false
+        System.out.println(Arrays.equals(j, k)); // false
+        System.out.println(Arrays.deepEquals(j, k)); // true
+
+        // fill
+        int[] l = new int[3];
+        System.out.println(Arrays.toString(l)); // [0, 0, 0]
+        Arrays.fill(l, 99);
+        System.out.println(Arrays.toString(l)); // [99, 99, 99]
+
+        // sort
+        int[] m = {9, 4, 1, 10, 20};
+        System.out.println(Arrays.toString(m));
+        Arrays.sort(m);
+        System.out.println(Arrays.toString(m));
     }
 }
