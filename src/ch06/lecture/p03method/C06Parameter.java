@@ -16,12 +16,16 @@ public class C06Parameter {
         System.out.println("Arrays.toString(b) = " + Arrays.toString(b));
 
         // 파라미터에 변수의 값이 전달됨
+        int z = 8;
+        o1.method1(z);
+        System.out.println("z = " + z);
     }
 }
 
 class MyClass06 {
     public void method1(int a) {
         System.out.println(a);
+        a = 88;
     }
 
     public void method2(int[] a) {
