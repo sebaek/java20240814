@@ -4,6 +4,10 @@ public class C11Polymorphism {
     public static void main(String[] args) {
         Bear11 bear = getBear();
         bear.hunt();
+
+        if (bear instanceof WhiteBear11 b) {
+            b.swim();
+        }
     }
 
     public static Bear11 getBear() {
@@ -35,5 +39,9 @@ class WhiteBear11 extends Bear11 {
     @Override
     public void hunt() {
         System.out.println("바다표범을 사냥합니다.");
+    }
+
+    public void swim() {
+        System.out.println("바다를 헤엄칩니다.");
     }
 }
