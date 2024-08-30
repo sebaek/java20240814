@@ -8,7 +8,7 @@ public class C01AbstractClass {
         Mammal1 bear1 = new Bear1();
         bear1.walk();
 
-        Mammal1 m1 = new Mammal1(); // x
+//        Mammal1 m1 = new Mammal1(); // x
     }
 }
 
