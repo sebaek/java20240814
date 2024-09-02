@@ -20,5 +20,7 @@ public class RemoteControlExample {
 
         rc.setMute(true);
         rc.setMute(false);
+
+        RemoteControl.changeBattery();
     }
 }
