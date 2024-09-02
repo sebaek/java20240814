@@ -20,7 +20,7 @@ interface Weapon {
 class Sword implements Weapon {
     @Override
     public void use() {
-        System.out.println("검을 휘두룹니다.");
+        System.out.println("검을 휘두릅니다.");
     }
 }
 
