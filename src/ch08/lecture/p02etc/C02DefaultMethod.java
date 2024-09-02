@@ -1,6 +1,15 @@
 package ch08.lecture.p02etc;
 
 public class C02DefaultMethod {
+    public static void main(String[] args) {
+        MyInterface2 o = new MyClass21();
+        o.method1();
+        o.method2();
+
+        MyInterface2 p = new MyClass22();
+        p.method1();
+        p.method2();
+    }
 }
 
 interface MyInterface2 {
@@ -8,7 +17,8 @@ interface MyInterface2 {
 
     // 코드블럭(메소드 몸통,body)이 있는
     // 인터페이스의 메소드
-    default void method2() {
+    // public 생략 가능
+    public default void method2() {
         System.out.println("MyInterface2.method2");
     }
 }
