@@ -14,10 +14,10 @@ public class Example {
     }
 
     public static void main(String[] args) {
-        int max = maxOrMin((x, y) -> Math.max(x, y)); // 50
+        int max = maxOrMin(Math::max); // 50
         System.out.println("max = " + max);
 
-        int min = maxOrMin((a, b) -> Math.min(a, b)); // 3
+        int min = maxOrMin(Math::min); // 3
         System.out.println("min = " + min);
     }
 }
