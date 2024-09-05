@@ -19,6 +19,18 @@ public class C05Quantifier {
         // 예제 : 010-1234-1234
         String p2 = "\\d{3}-\\d{4}-\\d{4}";
         System.out.println(matches(p2, "010-9998-8888"));
-        
+
+        // {n, m} : n~m 개
+        String p3 = "\\p{IsHangul}{3,4}";
+        System.out.println(matches(p3, "손흥민"));
+        System.out.println(matches(p3, "제갈공명"));
+        System.out.println(matches(p3, "가나다라마"));
+        System.out.println(matches(p3, "가나"));
+
+        // {n,} : n개 이상
+
+        // ? : {0,1}
+        // * : {0,}
+        // + : {1,}
     }
 }
