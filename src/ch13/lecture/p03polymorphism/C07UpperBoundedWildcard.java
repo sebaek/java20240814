@@ -7,7 +7,7 @@ public class C07UpperBoundedWildcard {
         var b3 = new Box7<Long>();
         var b4 = new Box7<Double>();
 
-        printItem(b1);
+//        printItem(b1);
         printItem(b2);
         printItem(b3);
         printItem(b4);
