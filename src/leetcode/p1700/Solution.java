@@ -16,7 +16,28 @@ class Solution {
             sandwiches.offer(n);
         }
 
-        
+        int notEat = 0;
+
+        while (!students.isEmpty()) {
+            Integer student1 = students.peek();
+            Integer sandwich1 = sandwiches.peek();
+
+            if (student1.equals(sandwich1)) {
+                students.poll();
+                sandwiches.poll();
+                notEat = 0;
+            } else {
+                student1 = students.poll();
+                students.offer(student1);
+
+                notEat++;
+            }
+
+            if (notEat == students.size()) {
+                return students.size();
+            }
+        }
+
         return 0;
     }
 }
