@@ -21,6 +21,11 @@ public class C05Client {
 
         try (scanner; ps; bos; os; socket) {
 
+            System.out.print("이름입력>");
+            String name = scanner.nextLine();
+            ps.println(name);
+            ps.flush();
+
             while (true) {
                 System.out.print(">");
                 String input = scanner.nextLine();

@@ -22,8 +22,10 @@ public class C05Server {
 
                         try (br; isr; socket) {
                             String line = null;
+                            String name = br.readLine();
+                            System.out.println("[" + name + "님 접속]");
                             while ((line = br.readLine()) != null) {
-                                System.out.println(">" + line);
+                                System.out.println(name + ">" + line);
                             }
                         }
                     } catch (Exception e) {
