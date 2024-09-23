@@ -8,11 +8,11 @@ import java.net.Socket;
 
 public class C03Client {
     public static void main(String[] args) throws Exception {
-        Socket socket = new Socket("172.30.1.84", 9999);
+        Socket socket = new Socket("172.30.1.83", 9999);
         OutputStream os = socket.getOutputStream();
         BufferedOutputStream bos = new BufferedOutputStream(os);
 
-        String fileName = "C:/Temp/지구온난화.jpg";
+        String fileName = "C:/Temp/지구.jpg";
         FileInputStream fis = new FileInputStream(fileName);
         BufferedInputStream bis = new BufferedInputStream(fis);
 
