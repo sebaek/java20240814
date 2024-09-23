@@ -32,34 +32,38 @@ public class C01Server {
             }
 
             // 빈 줄 이후 : 요청 본문 (request body)
+
+
+            // 응답 (server -> client)
+            try (ps; bw; osw; os; socket; serverSocket) {
+                String html = """
+                        <html>
+                            <body>
+                                <h1 style="color: blue">안녕 브라우저</h1>
+                                <p style="color: red">첫 번째 만든 서버 프로그램이야</p>
+                                <p style="text-align: center">이렇게 어려울 줄 몰랐어</p>
+                            </body>
+                        </html>
+                        """;
+
+                // 첫번째 줄 : 응답 상태 줄 (버전 상태코드 상태텍스트)
+                ps.println("HTTP/1.1 200 OK");
+
+                // 두번째 줄부터 : header (부가 정보)
+                ps.println("Content-Type: text/html; charset=utf-8");
+                ps.println("Content-Length: " + html.getBytes().length);
+
+                // 빈줄
+                ps.println();
+
+                // 응답본문
+                ps.println(html);
+
+                ps.flush();
+
+            }
         }
 
-        // 응답 (server -> client)
-        try (ps; bw; osw; os) {
-            String html = """
-                    <html>
-                        <body>
-                            <h1 style="color: blue">안녕 브라우저</h1>
-                            <p style="color: red">첫 번째 만든 서버 프로그램이야</p>
-                            <p style="text-align: center">이렇게 어려울 줄 몰랐어</p>
-                        </body>
-                    </html>
-                    """;
-
-            // 첫번째 줄 : 응답 상태 줄 (버전 상태코드 상태텍스트)
-            ps.println("HTTP/1.1 200 OK");
-
-            // 두번째 줄부터 : header (부가 정보)
-            ps.println("Content-Type: text/html; charset=utf-8");
-            ps.println("Content-Length: " + html.getBytes().length);
-
-            // 빈줄
-            ps.println();
-
-            // 응답본문
-            ps.println(html);
-
-        }
 
     }
 }
