@@ -18,7 +18,7 @@ public class C02Computer1 {
         BufferedWriter bw = new BufferedWriter(osw);
 
         try (bw; osw; os; socket; serverSocket) {
-            bw.write("안녕 클라이언트!!");
+            bw.write("안녕 kjb!!");
             bw.flush();
         }
 

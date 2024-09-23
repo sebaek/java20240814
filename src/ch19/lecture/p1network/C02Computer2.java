@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class C02Computer2 {
     public static void main(String[] args) throws Exception {
-        Socket socket = new Socket("172.30.1.84", 9999);
+        Socket socket = new Socket("172.30.1.83", 9999);
 
         InputStream is = socket.getInputStream();
         InputStreamReader isr = new InputStreamReader(is);
