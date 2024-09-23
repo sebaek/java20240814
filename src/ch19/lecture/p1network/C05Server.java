@@ -1,6 +1,5 @@
 package ch19.lecture.p1network;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -29,7 +28,7 @@ public class C05Server {
                             }
                         }
                     } catch (Exception e) {
-                        e.printStackTrace();
+//                        e.printStackTrace();
                     }
                 });
                 thread.start();
