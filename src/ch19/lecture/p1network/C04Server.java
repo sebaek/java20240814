@@ -6,13 +6,14 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketAddress;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class C04Server {
     public static void main(String[] args) throws Exception {
         // 주소 : 172.30.1.84
         // port : 9999
-        
+
         // client 가 보낸 파일 받기
         AtomicInteger number = new AtomicInteger(0);
 
@@ -46,6 +47,8 @@ public class C04Server {
                     e.printStackTrace();
                 }
             });
+
+            t.start();
         }
 
     }
